@@ -1,14 +1,11 @@
 SET SERVEROUTPUT ON;
-
 DECLARE
-  num1 NUMBER := 10;
-  num2 NUMBER := 20;
-  total NUMBER;
+  marks NUMBER := 65;
 BEGIN
-  total := num1 + num2;
-
-  DBMS_OUTPUT.PUT_LINE('First Number:'|| num1);
-  DBMS_OUTPUT.PUT_LINE('Second Number:'|| num2);
-  DBMS_OUTPUT.PUT_LINE('Sum:'|| total);
+  IF marks &gt;= 40 THEN
+    DBMS_OUTPUT.PUT_LINE('Student has Passed');
+  ELSE
+    DBMS_OUTPUT.PUT_LINE('Student has Failed');
+END IF;
 END;
 /
