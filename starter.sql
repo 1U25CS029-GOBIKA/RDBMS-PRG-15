@@ -9,5 +9,4 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Student has Failed');
   END IF;
 END;
-
 /
