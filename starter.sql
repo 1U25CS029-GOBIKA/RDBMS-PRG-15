@@ -1,21 +1,14 @@
--- PL/SQL IF-ELSE: Student Pass or Fail
--- Complete the program below.
--- Passing mark: 40
-
--- The program should:
--- 1. Store the student's marks in the variable v_marks.
--- 2. Use an IF-ELSE statement.
--- 3. Display PASS when marks are >= 40.
--- 4. Display FAIL when marks are < 40.
-
 SET SERVEROUTPUT ON;
 
 DECLARE
-v_marks NUMBER := 75;
+  num1 NUMBER := 10;
+  num2 NUMBER := 20;
+  total NUMBER;
 BEGIN
+  total := num1 + num2;
 
--- TODO: Write your IF-ELSE statement here.
-
-
+  DBMS_OUTPUT.PUT_LINE(&#39;First Number: &#39; || num1);
+  DBMS_OUTPUT.PUT_LINE(&#39;Second Number: &#39; || num2);
+  DBMS_OUTPUT.PUT_LINE(&#39;Sum: &#39; || total);
 END;
 /
